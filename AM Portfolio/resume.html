@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CS220 Personal portfolio</title>
+        <link href="styles.css" rel="stylesheet"/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    </head>
+
+    <body class="bg-[#f3ebf2]">
+        <main>
+            <!-- Navigation -->
+            <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+            <nav class="relative nav-green">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                    <a href="index.html" aria-current="page" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Home</a>
+                    <a href="projects.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+                    <a href="resume.html" class="nav-active rounded-md px-3 py-2 text-sm font-medium text-white">Resume</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+                    <div class="space-y-1 px-2 pt-2 pb-3">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                    <a href="index.html" aria-current="page" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Home</a>
+                    <a href="projects.html" class="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Project</a>
+                    <a href="resume.html" class="block nav-active rounded-md px-3 py-2 text-sm font-medium text-white">Resume</a>
+                    </div>
+                </el-disclosure>
+            </nav> 
+            
+                <div class="container mx-auto px-4">
+                    <div class="text-center mt-12 mb-6">
+                        <h1 class="text-5xl font-bold mb-5">
+                            <span class="text-[#392759]">Resume</span>
+                        </h1>
+                    </div>
+
+                    <div class="flex justify-center mb-10">
+                        <div class="w-full lg:w-11/12 xl:w-9/12 2xl:w-8/12">
+                            
+                            <section>
+                                <!--experience title-->
+                                <div class="flex flex-col md:flex-row items-center justify-between mb-5 gap-3">
+                                    <h2 class="text-[#392759] text-3xl font-bold">Experience</h2>
+
+                                    <!--dowload resume button-->
+                                    <h3 class="flex justify-left">
+                                        <a class="inline-flex items-center justify-center px-3 py-2 border-2 bg-[#392759] text-white text-md font-medium rounded-lg hover:bg-[#EEE0CB] hover:border-2 hover:text-black hover:font-medium transition-colors" href="#!">
+                                            <i class="bi bi-download mr-2"></i>
+                                            Download Resume
+                                        </a>
+                                    </h3>
+                                </div>
+
+                                <div class="bg-white shadow-xl border-0 rounded-3xl mb-10 overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                        <div class="grid grid-cols-2 lg:grid-cols-12 gap-12 items-start">
+                                            <div class="lg:col-span-5">
+                                                <div class="bg-slate-50 p-8 rounded-3xl inline-block w-full border-grey-100">
+                                                    <h1 class="font-extrabold uppercase text-[#553C7B] text-md tracking-wider">Admission Student Ambassador </h1>
+                                                    <div class="font-medium mb-2">September 2025 - Present</div>
+                                                    <div class="text-gray-500 text-sm">Wellesley College Office of Admission</div>
+                                                    <div class="text-gray-500 text-sm italic">Wellesley, MA</div>
+                                                </div>
+                                            </div>
+                                            <div class="lg:col-span-7 text-gray-600 leading-relaxed pt-4">
+                                                    • Lead campus tours, host virtual sessions, and write personalized outreach to visitors after tours to strengthen prospective student engagement<br><br>
+                                                    • Support marketing initiatives by creating social media content and digital campaigns, and conducting interviews that highlight the Wellesley experience
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white shadow-xl border-0 rounded-3xl mb-10 overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                        <div class="grid grid-cols-2 lg:grid-cols-12 gap-12 items-start">
+                                            <div class="lg:col-span-5">
+                                                <div class="bg-slate-50 p-8 rounded-3xl inline-block w-full border-grey-100">
+                                                    <h1 class="font-extrabold uppercase text-[#553C7B] text-md tracking-wider">Treasurer</h1>
+                                                    <div class="font-medium mb-2">September 2024 - Present</div>
+                                                    <div class="text-gray-500 text-sm">Mezcla</div>
+                                                    <div class="text-gray-500 text-sm italic">Wellesley, MA</div>
+                                                </div>
+                                            </div>
+                                            <div class="lg:col-span-7 text-gray-600 leading-relaxed pt-4">
+                                                    • Oversee organizational finances, including budgeting, fundraising, and funding applications<br><br>
+                                                    • Spearhead alumni outreach to coordinate in-person and online speaker events, organize general member events each week, and prepare biweekly newsletters.	
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-white shadow-xl border-0 rounded-3xl mb-10 overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                        <div class="grid grid-cols-2 lg:grid-cols-12 gap-12 items-start">
+                                            <div class="lg:col-span-5">
+                                                <div class="bg-slate-50 p-8 rounded-3xl inline-block w-full border-grey-100">
+                                                    <h1 class="font-extrabold uppercase text-[#553C7B] text-md tracking-wider">Apprentice</h1>
+                                                    <div class="font-medium mb-2">June 2025</div>
+                                                    <div class="text-gray-500 text-sm">Girls Who Code x Accenture Work Prep Program</div>
+                                                    <div class="text-gray-500 text-sm italic">Atlanta, GA</div>
+                                                </div>
+                                            </div>
+                                            <div class="lg:col-span-7 text-gray-600 leading-relaxed pt-4">
+                                                   • Designed proposal to enhance hospital efficiency using digital transformation tools and AI-driven approaches<br><br>
+                                                   • Strengthened client-based problem-solving, consulting methodologies, and teamwork in tech fields
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="mt-16">
+                                <h2 class="text-[#392759] text-3xl font-bold mb-8">Education</h2>
+                                <div class="bg-white shadow-xl border-0 rounded-3xl mb-10 overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                        <div class="flex flex-col lg:flex-row items-center gap-10">
+                                            <div class="w-full lg:w-1/3 text-center lg:text-left">
+                                                <div class="bg-slate-50 p-6 rounded-3xl">
+                                                    <div class="mb-2 font-extrabold uppercase text-[#553C7B]">Wellesley College</div>
+                                                    <div class="mb-2">
+                                                        <div class="font-bold text-sm uppercase">2024-2028</div>
+                                                        <div class="text-gray-500 text-xs">Wellesley Hills, MA</div>
+                                                    </div>
+                                                    <div class="text-gray-500 text-sm italic">
+                                                        <div>Bachelors</div>
+                                                        <div>Major</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-full lg:w-2/3 text-gray-600 leading-relaxed">
+                                                <div class="mb-2">
+                                                        <div class="font-bold text-sm uppercase">Relevant Courses:</div>
+                                                </div>
+                                                • Data Structures<br>
+                                                • Human Computer Interaction<br>
+                                                • Combinatorics & Graph Theory<br>
+                                                • Applied Data Analysis and Statistical Inference
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="mt-16 pb-20">
+                                <!--prof. skills title-->
+                                            <div class="flex flex-col md:flex-row items-center mb-8 gap-4">
+                                                <h2 class="text-[#392759] text-3xl font-bold">Skills</h2>
+                                            </div>
+                                <div class="bg-white shadow-xl border-0 rounded-3xl overflow-hidden">
+                                    <div class="p-8 md:p-12">
+                                        <div class="mb-12">
+                                            <div class="flex items-center mb-8">
+                                                <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-[#EEE0CB] to-[#636B61] text-white rounded-xl mr-4">
+                                                    <i class="bi bi-tools"></i>
+                                                </div>
+                                                <h3 class="text-2xl font-bold bg-[#636B61] bg-clip-text text-transparent">Professional Skills</h3>
+                                            </div>
+                                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                                <div class="bg-slate-50 rounded-2xl p-4 flex items-center justify-center text-center h-full">Data Analysis</div>
+                                                <div class="bg-slate-50 rounded-2xl p-4 flex items-center justify-center text-center h-full">Web Development</div>
+                                                <div class="bg-slate-50 rounded-2xl p-4 flex items-center justify-center text-center h-full">High Stakes Comunication</div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="flex items-center mb-8">
+                                                <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-[#EEE0CB] to-[#636B61] text-white rounded-xl mr-4">
+                                                    <i class="bi bi-code-slash"></i>
+                                                </div>
+                                                <h3 class="text-2xl font-bold bg-[#636B61] bg-clip-text text-transparent">Languages</h3>
+                                            </div>
+                                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                                <div class="bg-slate-50 rounded-2xl p-4 flex items-center justify-center h-full">HTML</div>
+                                                <div class="bg-slate-50 rounded-2xl p-4 flex items-center justify-center h-full">CSS</div>
+                                                <div class="bg-slate-50 rounded-2xl p-4 flex items-center justify-center h-full">C</div>
+                                                <div class="bg-slate-50 rounded-2xl p-4 flex items-center justify-center h-full">Python</div>
+                                                <div class="bg-slate-50 rounded-2xl p-4 flex items-center justify-center h-full">R</div>
+                                                <div class="bg-slate-50 rounded-2xl p-4 flex items-center justify-center h-full">Java</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+        <!-- Footer-->
+        <footer class="bg-white py-8 border-t border-gray-100">
+            <div class="container mx-auto px-12">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+                    <div class="shrink-0">
+                        &copy; Copyright, Arianna's Website 2026
+                    </div>
+                    
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-blue-600 transition-colors">Terms</a>
+                        <a href="#" class="hover:text-blue-600 transition-colors">Privacy</a>
+                        <a href="#" class="hover:text-blue-600 transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
